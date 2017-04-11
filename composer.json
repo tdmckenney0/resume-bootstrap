@@ -1,0 +1,15 @@
+{
+    "name": "tmckenney0/resume-bootstrap",
+    "description": "My Resume written in Bootstrap",
+    "type": "project",
+    "require": {
+        "twbs/bootstrap": "^3.3"
+    },
+    "license": "BSD",
+    "authors": [
+        {
+            "name": "Tanner Mckenney",
+            "email": "tmckenney@outlook.com"
+        }
+    ]
+}
