@@ -2,70 +2,58 @@
 <html lang="en">
     <head>
         <title>John Doe - Resume</title>
-        <link rel="stylesheet" href="vendor/twbs/bootstrap/dist/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="vendor/twbs/bootstrap/dist/css/bootstrap-theme.min.css" />
+        <link rel="stylesheet" href="bootstrap.min.css" />
         <script src="vendor/components/jquery/jquery.min.js"></script>
         <script src="vendor/twbs/bootstrap/dist/js/bootstrap.min.js"></script>
         <style type="text/css">
-           .panel-title, .list-group {
-                font-size: 85% !important;
-            }
-
             .compact, .experience-entry, .education-entry {
-                /* font-size: 70% !important; */
+                font-size: 90% !important;
+            } 
+
+            h4.experience-header, h4.education-header {
+                font-weight: bold;
             }
 
-            h5.experience-header, h5.education-header {
-                font-weight: bold;
+            .personal-reference {
+                margin-bottom: 1em;
             }
         </style>
     </head>
     <body>
         <div class="container-fluid">
             <div class="page-header">
-                <h1>John Doe <small>Certified Engineer</small></h1>
+                <h1>John Doe <small><em>Certified Engineer</em></small></h1>
             </div>
             <div class="row">
                 <div class="col-xs-8">
 
                     <!-- Experience -->
-                    <div class="panel panel-default">
+                    <div class="panel panel-primary">
                         <div class="panel-heading">
                             <h3 class="panel-title">Experience</h3>
                         </div>
                         <div class="panel-body">
                             <div class="experience-entry">
-                                <h5 class="experience-header">My First Company, LLC &nbsp;<small>New Dunsfold, NY - <em>Owner, CEO</em></small></h5>
-                                <p class="text-uppercase experience-range">JANUARY 2016 - PRESENT</p>
-                                <p>Lorem Ipsum</p>
+                                <h4 class="experience-header">My First Company, LLC &nbsp;<small>New Dunsfold, NY - <em>Owner, CEO</em></small></h4>
+                                <p class="text-uppercase text-muted experience-range">JANUARY 2016 - PRESENT</p>
+                                <p>My First Company!</p>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Education -->
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h3 class="panel-title">Education</h3>
-                        </div>
-                        <div class="panel-body">
-                            <div class="education-entry">
-                                <h5 class="education-header">Certified Engineer &nbsp;<small>New Dunsfold, NY</small></h5>
-                                <p class="text-uppercase education-range">February 2017 - Present</p>
-                                <p>Lorem Ipsum</p>
-                            </div>
-                        </div>
-                    </div>
+                    
                 </div>
+
                 <div class="col-xs-4">
                      <!-- Address -->
-                    <div class="panel panel-default">
+                    <div class="panel panel-primary">
                         <div class="panel-heading">
                             <h3 class="panel-title">Contact Information</h3>
                         </div>
                         <div class="panel-body">
                             <address>
                                 <strong>John Doe</strong><br />
-                                123 Test Blvd<br />
+                                12345 Test Lane<br />
                                 Suite A<br />
                                 New Dunsfold, NY<br />
                                 (800) 555-3537<br />
@@ -74,8 +62,22 @@
                         </div>
                     </div>
 
+                    <!-- References -->
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">References</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="personal-reference">
+                                <strong>Jane Doe</strong><br />
+                                (800) 555-2351<br />
+                                jane.doe@example.com
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- Skills -->
-                    <div class="panel panel-default">
+                    <div class="panel panel-primary">
                         <div class="panel-heading">
                             <h3 class="panel-title">Skills</h3>
                         </div>
@@ -83,34 +85,73 @@
                             Panel content
                         </div> -->
                         <ul class="list-group compact">
-                            <li class="list-group-item">Trust me, I've got em!</li>
+                            <li class="list-group-item">Full-Stack LAMP Developer</li>
+                            <li class="list-group-item">Enterprise Development</li>
+                            <li class="list-group-item">Software Engineering</li>
+                            <li class="list-group-item">Database Architecture</li>
+                            <li class="list-group-item">Research</li>
+                            <li class="list-group-item">Computer Repair</li>
                         </ul>
                     </div>
 
-                    <!-- References -->
-                     <div class="panel panel-default">
+                   
+                </div>
+            </div>
+
+            <!-- Begin Page 2 -->
+
+            <div class="page-header">
+                <h1>John Doe <small>Certified Engineer</small></h1>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-8">
+                    <!-- Education -->
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Education</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="education-entry">
+                                <h4 class="education-header">Certified Engineer &nbsp;<small>New Dunsfold, NY</small></h4>
+                                <p class="text-uppercase text-muted education-range">February 2017 - Present</p>
+                                <p>Passed the Certification for engineering in order to advance my career qualifications and skills.</p>
+                            </div>
+                        </div>
+                    </div><!-- end .panel -->
+                </div><!-- end .col-xs-8 -->
+
+                <div class="col-xs-4">
+                     <!-- Languages and Technologies -->
+                    <div class="panel panel-primary">
                         <div class="panel-heading">
                             <h3 class="panel-title">Languages &amp; Technologies</h3>
                         </div>
-                        <!-- <div class="panel-body">
-                            Panel content
-                        </div> -->
                         <ul class="list-group compact">
-                            <li class="list-group-item">HVAC (Heating, Air Conditioning)</li>
+                            <li class="list-group-item">PHP, HTML <em>(CakePHP, CodeIgnitor)</em></li>
+                            <li class="list-group-item">SQL <em>(MySQL, MariaDB)</em></li>
+                            <li class="list-group-item">CSS, JavaScript <em>(jQuery, Bootstrap)</em></li>
+                            <li class="list-group-item">C# <em>(Mono, ASP.NET, Unity)</em></li>
+                            <li class="list-group-item">Java, C, C++ <em>(Personal Projects)</em></li>
+                            <li class="list-group-item">Python <em>(Beginner)</em></li>
                         </ul>
                     </div>
 
-                    <!-- Social Networking -->
-                     <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h3 class="panel-title">References</h3>
-                        </div>
+                    
+                </div><!-- end .col-xs-4 -->
+            </div><!-- end .row -->
+
+            <div class="row">
+                <div class="col-xs-12">
+                    <!-- Education -->
+                    <div class="panel panel-primary">
                         <div class="panel-body">
-                            Panel content
+                            <p>I have built this resume using the Bootstrap HTML framework. Please, view the source!</p>
+                            <p>https://github.com/tdmckenney0/resume-bootstrap</p>
                         </div>
-                    </div>
-                </div>
-            </div>
+                    </div><!-- end .panel -->
+                </div><!-- end .col-xs-12 -->
+            </div><!-- end .row -->
         </div>
     </body>
 </html>
